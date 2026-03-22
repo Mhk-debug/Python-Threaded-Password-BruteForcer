@@ -158,7 +158,7 @@ def main():
 
     target_hash = hash_function(password.encode()).hexdigest()
 
-    cracker = PasswordCracker("rockyou.txt", hash_function, target_hash)
+    cracker = PasswordCracker("sample_wordlist.txt", hash_function, target_hash)
 
     cprint("Password Cracker", "cyan", attrs=["bold", "underline"])
     print("Target hash:", target_hash)
